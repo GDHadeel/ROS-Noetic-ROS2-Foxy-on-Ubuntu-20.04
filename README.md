@@ -13,6 +13,9 @@ This repository provides detailed guidelines for installing ROS Noetic and ROS2 
 
 ### Install ROS Noetic
 
+Now, let's install ROS Noetic. For more details, you can also refer to the [official ROS installation guide](http://wiki.ros.org/ROS/Installation):
+
+
 #### Ubuntu 20.04 on VirtualBox
 If you haven't already, start by installing Ubuntu 20.04 on VirtualBox. Here's how:
 
