@@ -5,7 +5,6 @@ This repository provides detailed guidelines for installing ROS Noetic and ROS2 
 
 ### Prerequisites
 
-* Ensure you have Ubuntu 20.04 installed on your machine. You can download it from [here](https://releases.ubuntu.com/20.04/).
 * Download Ubuntu 20.04 ISO file from [here](https://releases.ubuntu.com/20.04/)..
 * Open VirtualBox and create a new virtual machine.
 * Follow this [guide](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox) to install Ubuntu 20.04 on VirtualBox.
