@@ -1,53 +1,14 @@
 # ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04
 
 ## Description
-
-This repository provides detailed guidelines for installing ROS Noetic and ROS2 Foxy on Ubuntu 20.04. By following these steps, you can establish a robust development environment for your robotics projects.
-
-### Prerequisites
-
-Ensure you have Ubuntu 20.04 installed on your machine. You can download it from [here](https://releases.ubuntu.com/20.04/).
-
----
-
-### Install ROS Noetic
-
-#### Ubuntu 20.04 on VirtualBox
-
-If you haven't already, start by installing Ubuntu 20.04 on VirtualBox. Here's how:
-
-1. **Download Ubuntu 20.04 ISO:**
-   - Visit the [Ubuntu download page](https://ubuntu.com/download/desktop) and download the Ubuntu 20.04 LTS ISO file.
-
-2. **Create a Virtual Machine in VirtualBox:**
-   - Open VirtualBox and click on "New" to create a new virtual machine.
-   - Follow the wizard to set up the virtual machine, allocating memory and creating a virtual hard disk.
-
-3. **Install Ubuntu 20.04:**
-   - Select the Ubuntu 20.04 ISO file as the startup disk for the virtual machine.
-   - Follow the on-screen instructions to install Ubuntu 20.04 within the virtual machine.
-
-4. **Open Terminal:**
-   - Once Ubuntu 20.04 is installed and booted up, open a terminal window (`Ctrl + Alt + T`).
-
-#### Install ROS Noetic
-
-Now, let's install ROS Noetic:
-
-1. **Setup your sources.list:**
-   ```bash
-   sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-
-
-//////////////
-# ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04
-
-## Description
 This repository provides detailed guidelines for installing ROS Noetic and ROS2 Foxy on Ubuntu 20.04. By following these steps, you can establish a robust development environment for your robotics projects.
 
 ### Prerequisites
 
 * Ensure you have Ubuntu 20.04 installed on your machine. You can download it from [here](https://releases.ubuntu.com/20.04/).
+* Download Ubuntu 20.04 ISO file from [here](https://releases.ubuntu.com/20.04/)..
+* Open VirtualBox and create a new virtual machine.
+* Follow this [guide](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox) to install Ubuntu 20.04 on VirtualBox.
 
 ---
 
