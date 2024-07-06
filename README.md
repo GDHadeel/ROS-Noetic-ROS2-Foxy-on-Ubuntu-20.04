@@ -21,7 +21,7 @@ If you haven't already, start by installing Ubuntu 20.04 on VirtualBox. Here's h
 2. **Create a Virtual Machine in VirtualBox:**
    - Open VirtualBox and click on "New" to create a new virtual machine.
    - Follow the wizard to set up the virtual machine, allocating memory and creating a virtual hard disk.
-![image](https://github.com/GDHadeel/ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04/assets/126657301/9aa347d9-ef84-4859-94be-edb7d6bbd699)
+  ![image](https://github.com/GDHadeel/ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04/assets/126657301/9aa347d9-ef84-4859-94be-edb7d6bbd699)
 
 3. **Install Ubuntu 20.04:**
    - Select the Ubuntu 20.04 file as the startup disk for the virtual machine.
@@ -30,7 +30,7 @@ If you haven't already, start by installing Ubuntu 20.04 on VirtualBox. Here's h
 
 4. **Open Terminal:**
    - Once Ubuntu 20.04 is installed and booted up, open a terminal window (`Ctrl + Alt + T`).
-![image](https://github.com/GDHadeel/ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04/assets/126657301/f3ea4708-6802-4782-ae08-6eb91aaf6624)
+  ![image](https://github.com/GDHadeel/ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04/assets/126657301/f3ea4708-6802-4782-ae08-6eb91aaf6624)
 
    
 #### Install ROS Noetic
@@ -55,7 +55,6 @@ Now, let's install ROS Noetic:
      ```
 
 4. **Desktop-Full Install: (Recommended) :**
-   - First, make sure your Debian package index is up-to-date:
    - ```bash
      sudo apt install ros-noetic-desktop-full
      ```
@@ -69,7 +68,6 @@ Now, let's install ROS Noetic:
    - To install this tool and other dependencies for building ROS packages, run:
    - ```bash
      sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
-
      ```
      
    - Initialize rosdep
@@ -82,9 +80,6 @@ Now, let's install ROS Noetic:
      sudo rosdep init
      rosdep update
      ```
-
-
-
 
 
 ---
