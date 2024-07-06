@@ -89,7 +89,6 @@ Now, let's install ROS Noetic:
 
 ### Install ROS2 Foxy
 
-#### Install ROS2 Foxy
 Follow these steps to install ROS2 Foxy on Ubuntu 20.04:
 
 1. **Setting Locale to UTF-8:**
