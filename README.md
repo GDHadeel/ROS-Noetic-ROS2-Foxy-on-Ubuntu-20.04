@@ -35,7 +35,7 @@ If you haven't already, start by installing Ubuntu 20.04 on VirtualBox. Here's h
    
 #### Install ROS Noetic
 
-* Now, let's install ROS Noetic:
+Now, let's install ROS Noetic:
 
 1. **Setup your sources.list:**
    - Open a terminal and enter the following command to set up your sources list:
@@ -44,39 +44,39 @@ If you haven't already, start by installing Ubuntu 20.04 on VirtualBox. Here's h
      ```
 
 2. **Set up your keys:**
-   - ```bash
+     ```bash
      sudo apt install curl # if you haven't already installed curl
      curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
      ```
 3. **Installation:**
    - First, make sure your Debian package index is up-to-date:
-   - ```bash
+     ```bash
      sudo apt update
      ```
 
 4. **Desktop-Full Install: (Recommended) :**
-   - ```bash
+     ```bash
      sudo apt install ros-noetic-desktop-full
      ```
 5. **Environment setup:**
    - You must source this script in every bash terminal you use ROS in.
-   - ```bash
+     ```bash
      source /opt/ros/noetic/setup.bash
      ```
      
 6. **Environment setup:**
    - To install this tool and other dependencies for building ROS packages, run:
-   - ```bash
+     ```bash
      sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
      ```
      
    - Initialize rosdep
-   - ```bash
+     ```bash
      sudo apt install python3-rosdep
      ```
 
    - With the following, you can initialize rosdep.
-   - ```bash
+     ```bash
      sudo rosdep init
      rosdep update
      ```
