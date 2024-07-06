@@ -3,6 +3,8 @@
 ## Description 
 This repository provides detailed guidelines for installing ROS Noetic and ROS2 Foxy on Ubuntu 20.04. By following these steps, you can establish a robust development environment for your robotics projects.
 
+---
+
 ### Prerequisites
 
 * Download Ubuntu 20.04 desktop image from [here](https://releases.ubuntu.com/20.04/)
@@ -83,7 +85,6 @@ Now, let's install ROS Noetic:
      
 ![image](https://github.com/GDHadeel/ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04/assets/126657301/0b26a171-990a-4e3d-ab57-8319b733f05c)
 
-
 ---
 
 ### Install ROS2 Foxy
@@ -151,6 +152,7 @@ Follow these steps to install ROS2 Foxy on Ubuntu 20.04:
      ```
    ![image](https://github.com/GDHadeel/ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04/assets/126657301/77a290d1-5b59-41e4-970b-2ce1c2381e19)
 
+---
 
 ## Acknowledgements
 https://www.wikihow.com/Install-Ubuntu-on-VirtualBox
