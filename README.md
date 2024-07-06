@@ -1,6 +1,6 @@
 # ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04 
 
-## Description
+## Description 
 This repository provides detailed guidelines for installing ROS Noetic and ROS2 Foxy on Ubuntu 20.04. By following these steps, you can establish a robust development environment for your robotics projects.
 
 ### Prerequisites
@@ -91,51 +91,70 @@ Now, let's install ROS Noetic:
 #### Install ROS2 Foxy
 Follow these steps to install ROS2 Foxy on Ubuntu 20.04:
 
-1. **Setup your sources.list:**
-   - Add the ROS 2 repository to your sources list:
+1. **Setting Locale to UTF-8:**
      ```bash
-     sudo sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros2-latest.list'
+     locale  # check for UTF-8
+
+     sudo apt update && sudo apt install locales
+     sudo locale-gen en_US en_US.UTF-8
+     sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+     export LANG=en_US.UTF-8
+     
+     locale  # verify settings
      ```
 
-2. **Set up your keys:**
-   - ```bash
-     curl -fsSL https://www.robotis.com/docs/ROS/source.list.ros.txt | sudo tee /etc/apt/sources.list.d/ros-latest.list
+2. **Setup Sources:**
+   1. Ubuntu Universe repository enable
+     ```bash
+     sudo apt install software-properties-common
+     sudo add-apt-repository universe
+     ```
+     
+   2. add ROS 2 GPG key
+     ```bash
+     sudo apt update && sudo apt install curl -y
+     sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
      ```
 
-3. **Install ROS2 packages:**
+   3. add repository to sources list
+     ```bash
+     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+     ```
+
+4. **Install ROS2 packages:**
    - Update your package index and install ROS 2 packages:
      ```bash
      sudo apt update
-     sudo apt install ros-foxy-desktop
+     sudo apt upgrade
+     
+     sudo apt install ros-foxy-desktop python3-argcomplete
+     sudo apt install ros-foxy-ros-base python3-argcomplete
+     sudo apt install ros-dev-tools
      ```
 
----
-
-### Verify Installation
-
-After completing the installations, verify that ROS Noetic and ROS2 Foxy are correctly installed:
-
-1. **Source ROS setup files:**
-   - Source the ROS setup files in your current terminal session:
+5. **Environment setup:**
+   - Set up your environment by sourcing the following file:
      ```bash
-     source /opt/ros/noetic/setup.bash   # For ROS Noetic
-     source /opt/ros/foxy/setup.bash     # For ROS2 Foxy
+     # Replace ".bash" with your shell if you're not using bash
+     # Possible values are: setup.bash, setup.sh, setup.zsh
+     source /opt/ros/foxy/setup.bash
      ```
 
-2. **Check ROS version:**
-   - Verify the ROS installation by checking the version:
+6. **Try some examples:**
+   - If you installed ros-foxy-desktop above you can try some examples:
      ```bash
-     rosversion -d   # For ROS Noetic
-     ros2 --version  # For ROS2 Foxy
+     source /opt/ros/foxy/setup.bash
+     ros2 run demo_nodes_cpp talker
+
+     source /opt/ros/foxy/setup.bash
+     ros2 run demo_nodes_py listener
      ```
+   ![image](https://github.com/GDHadeel/ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04/assets/126657301/77a290d1-5b59-41e4-970b-2ce1c2381e19)
 
-3. **Test Installation:**
-   - Run a sample ROS or ROS2 command to ensure everything is working:
-     ```bash
-     roscore           # For ROS Noetic
-     ros2 run demo_nodes_cpp talker     # For ROS2 Foxy
-     ```
 
----
+## Acknowledgements
+https://www.wikihow.com/Install-Ubuntu-on-VirtualBox
+https://wiki.ros.org/noetic/Installation/Ubuntu
+https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html#id7
+https://www.youtube.com/watch?v=09giO7_UrB4&list=PLvG04RqmBajDdTTFSdMC9Wi4duqejaKu1&index=4&t=2747s
 
-These steps will guide you through setting up ROS Noetic and ROS2 Foxy on Ubuntu 20.04 using VirtualBox. Adjust paths and commands as needed for your specific setup.
