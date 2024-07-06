@@ -45,8 +45,47 @@ Now, let's install ROS Noetic:
 
 2. **Set up your keys:**
    - ```bash
-     curl -fsSL https://www.robotis.com/docs/ROS/source.list.ros.txt | sudo tee /etc/apt/sources.list.d/ros-latest.list
+     sudo apt install curl # if you haven't already installed curl
+     curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
      ```
+3. **Installation:**
+   - First, make sure your Debian package index is up-to-date:
+   - ```bash
+     sudo apt update
+     ```
+
+4. **Desktop-Full Install: (Recommended) :**
+   - First, make sure your Debian package index is up-to-date:
+   - ```bash
+     sudo apt install ros-noetic-desktop-full
+     ```
+5. **Environment setup:**
+   - You must source this script in every bash terminal you use ROS in.
+   - ```bash
+     source /opt/ros/noetic/setup.bash
+     ```
+     
+6. **Environment setup:**
+   - To install this tool and other dependencies for building ROS packages, run:
+   - ```bash
+     sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+
+     ```
+     
+   - Initialize rosdep
+   - ```bash
+     sudo apt install python3-rosdep
+     ```
+
+   - With the following, you can initialize rosdep.
+   - ```bash
+     sudo rosdep init
+     rosdep update
+     ```
+
+
+
+
 
 ---
 
