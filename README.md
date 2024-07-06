@@ -80,6 +80,8 @@ Now, let's install ROS Noetic:
      sudo rosdep init
      rosdep update
      ```
+     
+![image](https://github.com/GDHadeel/ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04/assets/126657301/0b26a171-990a-4e3d-ab57-8319b733f05c)
 
 
 ---
