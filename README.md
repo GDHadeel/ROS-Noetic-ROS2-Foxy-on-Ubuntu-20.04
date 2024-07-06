@@ -35,7 +35,7 @@ If you haven't already, start by installing Ubuntu 20.04 on VirtualBox. Here's h
    
 #### Install ROS Noetic
 
-Now, let's install ROS Noetic:
+* Now, let's install ROS Noetic:
 
 1. **Setup your sources.list:**
    - Open a terminal and enter the following command to set up your sources list:
