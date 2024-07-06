@@ -26,11 +26,13 @@ If you haven't already, start by installing Ubuntu 20.04 on VirtualBox. Here's h
 3. **Install Ubuntu 20.04:**
    - Select the Ubuntu 20.04 file as the startup disk for the virtual machine.
    - Follow the on-screen instructions to install Ubuntu 20.04 within the virtual machine.
+  ![image](https://github.com/GDHadeel/ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04/assets/126657301/041b70cd-af33-45e7-a0a8-91bf92aa9bec)
 
 4. **Open Terminal:**
    - Once Ubuntu 20.04 is installed and booted up, open a terminal window (`Ctrl + Alt + T`).
+![image](https://github.com/GDHadeel/ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04/assets/126657301/f3ea4708-6802-4782-ae08-6eb91aaf6624)
 
-     
+   
 #### Install ROS Noetic
 
 Now, let's install ROS Noetic:
