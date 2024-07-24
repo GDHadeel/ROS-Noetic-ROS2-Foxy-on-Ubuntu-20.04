@@ -1,6 +1,6 @@
 # ROS-Noetic-ROS2-Foxy-on-Ubuntu-20.04 
 
-# Task 1: Installing ROS Noetic and ROS2 Foxy on Ubuntu 20.04 
+# Task 1: Install ROS noetic & Install ROS2 foxy on Ubuntu 20.04 
 
 ## Description 
 This repository provides detailed guidelines for installing ROS Noetic and ROS2 Foxy on Ubuntu 20.04. By following these steps, you can establish a robust development environment for your robotics projects.
